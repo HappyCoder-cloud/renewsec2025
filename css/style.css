@@ -751,6 +751,36 @@ copyright-bar a:hover {
 }
 @media (max-width: 575.98px) {
   .hero-section {
-    margin-top: 68px; /* For very small phones, a bit less space */
+    margin-top: 50px; /* For very small phones, a bit less space */
   }
 }
+.main-header .container {
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+
+@media (max-width: 991.98px) {
+  /* Force row layout on mobile */
+  .main-header .container {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 1rem !important;
+  }
+  /* Logo size for mobile */
+  .main-header .brand-logo {
+    height: 100px !important;
+  }
+  /* Organised by block aligned right */
+  .main-header .org-wrap {
+    flex: 0 0 auto !important;
+    margin-top: 0 !important;
+    margin-left: 1rem !important;
+    min-width: auto !important;
+    text-align: right !important;
+  }
+  /* Remove bottom margin from hamburger button */
+  .main-header .navbar-toggler {
+    margin-bottom: 0 !important;
+  }
+}
+

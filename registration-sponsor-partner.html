@@ -15,35 +15,34 @@
 <!-- HEADER (reuse your standard header HTML here) -->
 <header class="main-header shadow-sm fixed-top bg-white">
   <nav class="navbar navbar-expand-lg">
-    <div class="container flex-column flex-lg-row align-items-start align-items-lg-center position-relative">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between position-relative">
       
       <!-- Logo left -->
       <a class="navbar-brand d-flex align-items-center gap-2 me-0 me-lg-3" href="#">
-        <img src="img/logo.jpg" alt="RENEWSEC 2025" class="brand-logo" style="height:120px; width:auto;">
+        <img src="img/logo.jpg" alt="RENEWSEC 2025" class="brand-logo" style="height:100px; width:auto;">
       </a>
-      
-      <!-- Menu/CTA center -->
-      <div class="flex-grow-1 w-100">
-        <button class="navbar-toggler ms-auto mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-          <ul class="navbar-nav align-items-lg-center gap-lg-2 mb-1 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#why">Why OT Cybersecurity</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
-            <li class="nav-item"><a class="nav-link" href="#conference">Conference</a></li>
-            <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
-            <li class="nav-item"><a class="nav-link" href="#committee">Advisory</a></li>
-            <li class="nav-item"><a class="nav-link" href="#exhibition">Exhibition</a></li>
-            <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-          <a href="#register" class="btn btn-brand ms-lg-4 mt-3 mt-lg-0">Register</a>
-        </div>
+
+      <!-- Hamburger toggle button -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation menu with Register button -->
+      <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-2 mb-1 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="about_us.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="sponsor.html">Speakers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#conference">Conference</a></li>
+          <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#committee">Advisory</a></li>
+          <li class="nav-item"><a class="nav-link" href="#exhibition">Exhibition</a></li>
+          <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="register.html" class="btn btn-brand ms-lg-4 mt-3 mt-lg-0">Register</a>
       </div>
-      
-      <!-- Organised by block (always at bottom on mobile, at right on desktop) -->
+
+      <!-- Organised by block -->
       <div class="org-wrap text-center mt-2 mt-lg-0 ms-lg-3" style="min-width:130px;">
         <span class="small text-muted d-block">Organised by</span>
         <a href="#" target="_blank" rel="noopener">
@@ -150,7 +149,32 @@
   <div class="container">
     <div class="row g-4">
 
-      <!-- Left: Organised by logo, address, social -->
+       <!-- Left: Contact Details -->
+      <div class="col-lg-4 text-center">
+        <h6 class="fw-bold mb-3">Contact Us</h6>
+        <ul class="list-unstyled small footer-links d-inline-block text-start">
+          <li><span class="fw-semibold">RAVI KUMAR</span> – DIRECTOR PROJECTS</li>
+          <li><a href="mailto:ravi@confexexhibition.com">ravi@confexexhibition.com</a></li>
+          <li><a href="tel:+919818421654">+91-9818421654</a></li>
+          <li><a href="https://globalotsummit.com/www.globalotsummit.com" target="_blank">www.globalotsummit.com</a></li>
+        </ul>
+      </div>
+	  
+      <!-- Center: Quick Links -->
+      <div class="col-lg-4 text-center mb-2">
+        <h6 class="fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled small footer-links d-inline-block text-start">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Why OT Cybersecurity</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#exhibition">Exhibition</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#committee">Committee</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Organised by logo, address, social -->
       <div class="col-lg-4 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start mb-2">
 	   <h6 class="fw-bold mb-3">Organised By</h6>
         <img src="https://globalotsummit.com/assets/images/confex.png"
@@ -166,39 +190,19 @@
           <a class="social" href="#"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
-
-      <!-- Center: Quick Links -->
-      <div class="col-lg-4 text-center mb-2">
-        <h6 class="fw-bold mb-3">Quick Links</h6>
-        <ul class="list-unstyled small footer-links d-inline-block text-start">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#why">Why OT Cybersecurity</a></li>
-          <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#exhibition">Exhibition</a></li>
-          <li><a href="#partners">Partners</a></li>
-          <li><a href="#committee">Committee</a></li>
-          <li><a href="#highlights">Highlights</a></li>
-        </ul>
-      </div>
-
-      <!-- Right: Contact Details -->
-      <div class="col-lg-4 text-center text-lg-end">
-        <h6 class="fw-bold mb-3">Contact Us</h6>
-        <ul class="list-unstyled small footer-links d-inline-block text-start text-lg-end">
-          <li><span class="fw-semibold">RAVI KUMAR</span> – DIRECTOR PROJECTS</li>
-          <li><a href="mailto:ravi@confexexhibition.com">ravi@confexexhibition.com</a></li>
-          <li><a href="tel:+919818421654">+91-9818421654</a></li>
-          <li><a href="https://globalotsummit.com/www.globalotsummit.com" target="_blank">www.globalotsummit.com</a></li>
-        </ul>
-      </div>
-
     </div>
   </div>
   <!-- Copyright Bar (below footer), fixed height, logo color background -->
 <div class="copyright-bar">
-  © 2025 RENEWSEC2025 Exhibition · All Rights Reserved
+  <p>
+    © 2025 RENEWSEC2025 Exhibition · All Rights Reserved
+    | <a href="#privacy-policy">Privacy Policy</a>
+    | <a href="#refund-policy">Refund Policy</a>
+    | <a href="#sitemap">Site Map</a>
+  </p>
 </div>
 </footer>
+  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Thank You Modal -->
 <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
