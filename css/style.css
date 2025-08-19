@@ -93,6 +93,115 @@ body {
     padding-bottom: 0.09rem;
   }
 }
+/* Open dropdown on hover for large screens */
+@media (min-width: 992px) {
+  .dropdown-hover:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0; /* aligns under parent */
+  }
+  .dropdown-hover .dropdown-toggle::after {
+    transition: transform 0.15s ease;
+  }
+  .dropdown-hover:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+}
+.conference-section .section-title {
+font-weight: 800;
+color: var(--green, #1B5E20);
+border-bottom: 3px solid var(--gold, #E2B322);
+display: inline-block;
+padding-bottom: 0.25rem;
+letter-spacing: 0.02em;
+margin-bottom: 0.8rem;
+}
+
+.conference-section .sub-title {
+font-weight: 800;
+color: var(--green-2, #2E7D32);
+font-size: 1.25rem;
+letter-spacing: 0.01em;
+}
+
+.conference-section .lead {
+font-size: 1.08rem;
+line-height: 1.6;
+}
+
+.attend-list {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.attend-list li {
+position: relative;
+display: flex;
+align-items: flex-start;
+gap: 0.6em;
+margin-bottom: 0.6em;
+line-height: 1.4;
+font-weight: 600;
+color: var(--muted, #5B6470);
+}
+
+.attend-list li::before {
+content: "";
+flex: 0 0 10px;
+height: 10px;
+margin-top: 0.3em;
+border-radius: 50%;
+background: var(--gold, #E2B322);
+box-shadow: 0 0 0 3px rgba(226,179,34,0.14);
+}
+
+.conf-visual.card-like {
+background: #fff;
+border: 1.5px solid var(--rule, #E6ECEA);
+border-radius: 18px;
+padding: 10px;
+box-shadow: 0 6px 18px rgba(27,94,32,0.07);
+transition: box-shadow .18s, transform .15s;
+}
+
+.conf-visual.card-like:hover {
+box-shadow: 0 12px 28px rgba(226,179,34,0.16);
+transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+.conference-section .section-title {
+font-size: 1.5rem;
+border-bottom-width: 2px;
+}
+.conference-section .sub-title {
+font-size: 1.1rem;
+}
+.conference-section .lead {
+font-size: 1rem;
+}
+}
+/* Optional: Dropdown menu spacing and shadow (fits your theme) */
+.navbar .dropdown-menu {
+  border-radius: 14px;
+  box-shadow: 0 9px 24px rgba(27,94,32,0.10), 0 1.5px 9px rgba(226,179,34,0.07);
+  border: none;
+  padding: 0.23rem 0;
+}
+
+.navbar .dropdown-item {
+  color: var(--green-2);
+  font-weight: 600;
+  font-size: 1.03rem;
+  padding: 0.78em 1.16em;
+  border-radius: 5px;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background: var(--gold);
+  color: var(--green);
+}
 
 /* HERO and carousel */
 .hero-section {
@@ -163,10 +272,54 @@ ul.list-unstyled.fs-5 li {
   background: url('data:image/svg+xml;utf8,<svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" fill="%23E2B322"/></svg>')
     no-repeat 0 0.63em;
   padding-left: 1.8em;
-  margin-bottom: 0.8em;
-  line-height: 1;
+  margin-bottom: 0.5em;
+  font-size: 1rem !important;
+  
+}
+.why-ot {
+background: #F6FBF7;
 }
 
+.why-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.why-list li {
+position: relative;
+display: flex;
+align-items: flex-start; /* keeps text aligned with the marker top /
+gap: 0.75em;
+padding-left: 0; / we’re using a pseudo marker, so no indent /
+margin-bottom: 0.85em;
+line-height: 1.35;
+font-size: 1.06rem; / similar to .fs-5 but consistent across devices */
+}
+
+.why-list li::before {
+content: "";
+flex: 0 0 10px; /* stable width for the marker /
+height: 10px;
+margin-top: 0.35em; / visually centers the dot to first line /
+border-radius: 50%;
+background: #E2B322; / var(--gold) fallback /
+box-shadow: 0 0 0 3px #E2B32222;/ subtle halo for premium feel */
+}
+
+@media (min-width: 992px) {
+.why-list li {
+font-size: 1.1rem;
+}
+}
+
+Optional: If you prefer using CSS variables for color
+Replace background in ::before with your gold variable.
+
+.why-list li::before {
+background: var(--gold, #E2B322);
+box-shadow: 0 0 0 3px rgba(226,179,34,0.13);
+}
 /* Card styling for speakers/committee */
 .card {
   border-radius: 18px;
@@ -397,7 +550,7 @@ ul.list-unstyled.fs-5 li {
 }
 .hero-section p.lead,
 .hero-section .fs-5 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
@@ -425,7 +578,85 @@ ul.list-unstyled.fs-5 li {
     padding: 0.65em 1em;
   }
 }
+.exhibition-section {
+background: #F6FBF7;
+}
 
+.exhibition-section .section-title {
+font-weight: 800;
+color: var(--green, #1B5E20);
+border-bottom: 3px solid var(--gold, #E2B322);
+display: inline-block;
+padding-bottom: 0.25rem;
+letter-spacing: 0.02em;
+margin-bottom: 0.8rem;
+}
+
+.exhibition-section .sub-title {
+font-weight: 800;
+color: var(--green-2, #2E7D32);
+font-size: 1.25rem;
+letter-spacing: 0.01em;
+}
+
+.exhibition-section .lead {
+font-size: 1.08rem;
+line-height: 1.6;
+}
+
+.exhibit-list {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.exhibit-list li {
+position: relative;
+display: flex;
+align-items: flex-start;
+gap: 0.6em;
+margin-bottom: 0.6em;
+line-height: 1.4;
+font-weight: 600;
+color: var(--muted, #5B6470);
+}
+
+.exhibit-list li::before {
+content: "";
+flex: 0 0 10px;
+height: 10px;
+margin-top: 0.3em;
+border-radius: 50%;
+background: var(--gold, #E2B322);
+box-shadow: 0 0 0 3px rgba(226,179,34,0.14);
+}
+
+.exhibit-visual.card-like {
+background: #fff;
+border: 1.5px solid var(--rule, #E6ECEA);
+border-radius: 18px;
+padding: 10px;
+box-shadow: 0 6px 18px rgba(27,94,32,0.07);
+transition: box-shadow .18s, transform .15s;
+}
+
+.exhibit-visual.card-like:hover {
+box-shadow: 0 12px 28px rgba(226,179,34,0.16);
+transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+.exhibition-section .section-title {
+font-size: 1.5rem;
+border-bottom-width: 2px;
+}
+.exhibition-section .sub-title {
+font-size: 1.1rem;
+}
+.exhibition-section .lead {
+font-size: 1rem;
+}
+}
 /* Mobile CTA Botton */
 .topic-card {
   border-radius: 16px;
