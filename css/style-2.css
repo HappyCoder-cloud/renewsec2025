@@ -196,6 +196,24 @@ img.org-by {
     opacity: .9;
     margin-bottom: 0
 }
+.inner-hero-bg {
+    color: #fff;
+    padding: 35px 0 35px;
+    position: relative;
+    overflow: hidden;
+}
+.inner-hero-bg h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+	 text-transform: uppercase;
+}
+
+.inner-hero-bg p {
+    font-size: 1.2rem;
+    opacity: .9;
+    margin-bottom: 0
+}
 
 .breadcrumb-custom {
     background: transparent;
