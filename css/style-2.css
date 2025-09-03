@@ -176,7 +176,6 @@ img.org-by {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(https://globalotsummit.com/admin/assets/uploads/slider/1753680221_img_clg.jpg) center/cover;
     opacity: .1
 }
 
@@ -1298,6 +1297,9 @@ Replace background in ::before with your gold variable. */
 .org-footer-logo {
     height: auto;
     width: 240px;
+}
+.footer-links a {
+    font-size: 14.5px;
 }
 /* COPYRIGHT BAR BELOW FOOTER */
 /* COPYRIGHT BAR BELOW FOOTER */
