@@ -2344,10 +2344,10 @@ input.form-check-input {
   display: flex;
   align-items: flex-start;
   gap: .7em;
-  font-size: 1.09rem;
+  font-size: 1rem;
   line-height: 1.45;
   color: var(--muted,#5B6470);
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: .65em;
   padding-left: 1.3em;
 }
